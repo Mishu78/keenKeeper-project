@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Apps = () => {
+const Timeline = () => {
     return (
         <div>
-            Apps
+            Timeline
         </div>
     );
 };
 
-export default Apps;
+export default Timeline;

@@ -4,8 +4,9 @@ import './index.css'
 import { RouterProvider } from 'react-router/dom'
 import { createBrowserRouter } from 'react-router'
 import RootLayout from './layout/RootLayout'
-import FriendConnection from './pages/connection/FriendConnection'
-import Apps from './pages/apps/Apps'
+import Timeline from './pages/Timeline/Timeline'
+import Stats from './pages/Stats/Stats'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 const router= createBrowserRouter(
   [
     {
@@ -17,15 +18,15 @@ const router= createBrowserRouter(
           element: <h2>Homepage</h2>
         },
         {
-          path:'/apps',
-          element: <Apps/>
+          path:'/timeline',
+          element: <Timeline/>
         },
         {
-          path:'/friendConnection',
-          element:<FriendConnection/>
+          path:'/stats',
+          element: <Stats/>
         },
       ],
-      errorElement:<h2>This page is not found</h2>
+      errorElement:<NotFoundPage/>
     },
     
   ]
