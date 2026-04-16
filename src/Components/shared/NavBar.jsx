@@ -12,10 +12,10 @@ const NavBar = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li><NavLink to={'/'} className={({isActive})=>`${isActive ? "bg-green-700 text-white" : "bg-white"}`}><CiHome />Home</NavLink></li>
-      <li><NavLink to={'/timeline'} className={({isActive})=>`${isActive ? "bg-green-700 text-white" : "bg-white"}`}><RiTimeLine />Timeline</NavLink>
+      <li><NavLink to={'/'} className={({isActive})=>`text-gray-600 font-semibold ${isActive ? "bg-green-700 text-white" : "bg-white"}`}><CiHome />Home</NavLink></li>
+      <li><NavLink to={'/timeline'} className={({isActive})=>`text-gray-600 font-semibold ${isActive ? "bg-green-700 text-white" : "bg-white"}`}><RiTimeLine />Timeline</NavLink>
       </li>
-       <li><NavLink to={'/stats'} className={({isActive})=>`${isActive ? "bg-green-700 text-white" : "bg-white"}`}><ImStatsDots />Stats</NavLink>
+       <li><NavLink to={'/stats'} className={({isActive})=>`text-gray-600 font-semibold ${isActive ? "bg-green-700 text-white" : "bg-white"}`}><ImStatsDots />Stats</NavLink>
       </li>
     </ul>
   </div>
