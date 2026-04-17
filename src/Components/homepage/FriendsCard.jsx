@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const FriendsCard = ({friend}) => {
-    const {name, picture, days_since_contact, tags, status} = friend;
+    const {id,name, picture, days_since_contact, tags, status} = friend;
 
     let statusClass = '';
 
@@ -15,6 +16,7 @@ const FriendsCard = ({friend}) => {
         statusClass = 'bg-green-900 text-white';
     }
     return (
+        <Link to={`/friend/${id}`}>
         <div className='rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col items-center text-center transition-all hover:shadow-md'>
             <img className='w-20 h-20 rounded-full object-cover border-2 border-gray-50 shadow-inner' src={picture} alt={name} />
             <h3 className='text-lg font-bold text-gray-800 mb-1'>{name}</h3>
@@ -32,6 +34,7 @@ const FriendsCard = ({friend}) => {
                 {status}
             </div>
         </div>
+        </Link>
     );
 };
 

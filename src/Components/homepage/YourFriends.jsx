@@ -15,7 +15,12 @@ const FriendsCards = () => {
     }, []);
 
     if (loading) {
-        return <span className="loading loading-bars loading-xl"></span>
+        return (
+      <div className=' flex justify-center mt-20'>
+        <span className="loading loading-bars loading-xl"></span>
+      </div>
+        )
+        
     }
 
     return (
