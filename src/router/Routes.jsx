@@ -22,17 +22,17 @@ import { createBrowserRouter } from 'react-router'
             element:<AppDetails/>
         },
         {
-          pat6h:'/number',
+          path:'/number',
           element:<Number/>
         },
         {
           path:'/timeline',
           element: <Timeline/>
         },
-        {
-          path:'/stats',
-          element:<Stats/>
-        }
+       {
+        path:'/stats',
+        element:<Stats/>
+       }
       ],
       errorElement:<NotFoundPage/>
     },
