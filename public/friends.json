@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Marcus Chen",
+      "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+      "email": "m.chen@techmail.com",
+      "days_since_contact": 22,
+      "status": "Overdue",
+      "tags": ["college", "gaming"],
+      "bio": "Roommate from sophomore year. We usually play League on weekends.",
+      "goal": 14,
+      "next_due_date": "2026-04-05"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Jenkins",
+      "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+      "email": "sara.j@lifestyle.com",
+      "days_since_contact": 3,
+      "status": "On-Track",
+      "tags": ["high school"],
+      "bio": "Childhood best friend. She knows everything about my family drama.",
+      "goal": 7,
+      "next_due_date": "2026-04-21"
+    },
+    {
+      "id": 3,
+      "name": "Elena Rodriguez",
+      "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+      "email": "elena.rod@design.co",
+      "days_since_contact": 28,
+      "status": "Almost Due",
+      "tags": [ "mentor"],
+      "bio": "Former Creative Director at my first job. Great for career advice.",
+      "goal": 30,
+      "next_due_date": "2026-04-19"
+    },
+    {
+      "id": 4,
+      "name": "David 'Dax' Miller",
+      "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+      "email": "dax.miller88@gmail.com",
+      "days_since_contact": 45,
+      "status": "Overdue",
+      "tags": ["gym", "hiking"],
+      "bio": "Met at the bouldering gym. We planned a trip to Zion that fell through.",
+      "goal": 30,
+      "next_due_date": "2026-03-02"
+    },
+    {
+      "id": 5,
+      "name": "Priya Sharma",
+      "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+      "email": "psharma@outlook.com",
+      "days_since_contact": 5,
+      "status": "On-Track",
+      "tags": ["neighbor"],
+      "bio": "Lives two doors down. We swap sci-fi novels every few weeks.",
+      "goal": 14,
+      "next_due_date": "2026-04-26"
+    },
+    {
+      "id": 6,
+      "name": "Jordan Smith",
+      "picture": "https://randomuser.me/api/portraits/men/85.jpg",
+      "email": "jsmith_sports@yahoo.com",
+      "days_since_contact": 12,
+      "status": "Almost Due",
+      "tags": ["basketball", "local"],
+      "bio": "Plays in the Tuesday night pickup league. Needs a reminder to pass the ball.",
+      "goal": 14,
+      "next_due_date": "2026-04-18"
+    },
+    {
+      "id": 7,
+      "name": "Chloe Whitmore",
+      "picture": "https://randomuser.me/api/portraits/women/17.jpg",
+      "email": "c.whitmore@artbox.org",
+      "days_since_contact": 60,
+      "status": "Overdue",
+      "tags": [ "photography"],
+      "bio": "Met in Berlin during my gap year. We share film photography tips.",
+      "goal": 45,
+      "next_due_date": "2026-03-15"
+    },
+    {
+      "id": 8,
+      "name": "Leo Thompson",
+      "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+      "email": "leo.t.foodie@gmail.com",
+      "days_since_contact": 2,
+      "status": "On-Track",
+      "tags": ["foodie"],
+      "bio": "Go-to person for trying new ramen spots in the city.",
+      "goal": 10,
+      "next_due_date": "2026-04-25"
+    },
+    {
+      "id": 9,
+      "name": "Amina Okafor",
+      "picture": "https://randomuser.me/api/portraits/women/50.jpg",
+      "email": "amina.o@university.edu",
+      "days_since_contact": 85,
+      "status": "Overdue",
+      "tags": ["college"],
+      "bio": "Study buddy from Intro to Psych. Currently doing her PhD in London.",
+      "goal": 60,
+      "next_due_date": "2026-02-10"
+    },
+    {
+      "id": 10,
+      "name": "Sam Wilson",
+      "picture": "https://randomuser.me/api/portraits/men/62.jpg",
+      "email": "samwise@musicmail.net",
+      "days_since_contact": 19,
+      "status": "Almost Due",
+      "tags": ["musician", "creative"],
+      "bio": "Bassist in my old band. We keep saying we'll start a new project.",
+      "goal": 21,
+      "next_due_date": "2026-04-19"
+    }
+  ]
