@@ -1,16 +1,67 @@
-# React + Vite
+# 🤝 KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status](https://img.shields.io/badge/Status-In--Development-green?style=for-the-badge)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Description
 
-## React Compiler
+**KeenKeeper** is a smart personal relationship management (CRM) web app built with React.  
+It helps users track friendships, monitor interaction history, and maintain meaningful relationships through reminders and analytics.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎯 Relationship Tracking
+- Smart status system: 🟢 On Track | 🟡 Almost Due | 🔴 Overdue  
+- Personalized friend profiles with tags, bio, and email  
+- Days since last contact tracking  
+
+### 📊 Analytics Dashboard
+- Pie chart showing Call / Text / Video interactions  
+- Built using **Recharts**  
+- Dynamic updates from timeline data  
+
+### 📜 Timeline System
+- Logs Call, Text, and Video interactions  
+- Stores data in localStorage  
+- Real-time updates across pages  
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+![Home Page](https://github.com/user-attachments/assets/0f1d9147-8035-4ac8-b704-ac92e96a56cb)
+
+### 👤 Friend Details Page
+![Friend Details](https://github.com/user-attachments/assets/c5c1c569-9c55-4f28-9b11-96fdb45236ba)
+
+### 📊 Stats Page
+![Stats Page](https://github.com/user-attachments/assets/123fa0f0-f77c-41d7-ba89-85f140a36c9c)
+---
+
+## 🛠️ Tech Stack
+
+- React.js (Vite)
+- Tailwind CSS
+- React Router DOM
+- Recharts
+- React Toastify
+- LocalStorage API
+
+---
+
+## 🏗️ Project Structure
+
+```bash
+src/
+├── components/      # Reusable UI components
+├── pages/           # All pages (Home, Details, Stats, Timeline)
+├── layout/          # Root layout (Navbar + Footer)
+├── data/            # friends.json mock data
+└── utils/           # helper functions
