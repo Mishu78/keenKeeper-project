@@ -8,7 +8,7 @@ const NavBar = () => {
         <nav className=''>
           <div className="navbar bg-base-100 shadow-sm flex justify-between gap-4 items-center container mx-auto py-[8px]">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl"><img src="/src/assets/logo.png" alt="" /></a>
+    <a className="btn btn-ghost text-xl"><img src="/logo.png" alt="" /></a>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">

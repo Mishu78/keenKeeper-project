@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo */}
         <img
           className="mx-auto mb-5 w-32 md:w-40"
-          src="/src/assets/logo-xl.png"
+          src="/logo-xl.png"
           alt="logo"
         />
 
@@ -22,9 +22,9 @@ const Footer = () => {
         <h2 className="mt-6 mb-3 font-semibold">Social Links</h2>
 
         <div className="flex justify-center gap-4 mb-6">
-          <img className="w-6 md:w-8 cursor-pointer" src="/src/assets/facebook.png" alt="facebook" />
-          <img className="w-6 md:w-8 cursor-pointer" src="/src/assets/instagram.png" alt="instagram" />
-          <img className="w-6 md:w-8 cursor-pointer" src="/src/assets/twitter.png" alt="twitter" />
+          <img className="w-6 md:w-8 cursor-pointer" src="/facebook.png" alt="facebook" />
+          <img className="w-6 md:w-8 cursor-pointer" src="/instagram.png" alt="instagram" />
+          <img className="w-6 md:w-8 cursor-pointer" src="/twitter.png" alt="twitter" />
         </div>
 
         {/* Divider */}
