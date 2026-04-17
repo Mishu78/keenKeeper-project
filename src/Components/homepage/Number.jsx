@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Stats = () => {
+const Number = () => {
     return (
         <div className='flex  justify-center items-center text-center pt-10'>
             <div className="card bg-base-100 shadow-sm mr-5">
@@ -34,4 +34,4 @@ const Stats = () => {
     );
 };
 
-export default Stats;
+export default Number;
