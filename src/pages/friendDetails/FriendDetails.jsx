@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-
+import { ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 const FriendDetails = () => {
   const { id } = useParams();
   const [friend, setFriend] = useState(null);
@@ -38,12 +39,24 @@ const FriendDetails = () => {
     const existing=JSON.parse(localStorage.getItem("activities"))|| [];
     const updated=[newActivity, ...existing];
     localStorage.setItem("activities",JSON.stringify(updated));
+
+    toast.success(`${type} with ${friend.name}`,{
+      icon: type === "Call" ? "📞" : type === "Text" ? "💬" : "🎥",
+      style:{
+        borderRadius:"10px",
+        background:  'white',
+        color: 'black',
+        fontWeight:"bold",
+      }
+    })
     window.dispatchEvent(new Event("activityUpdated"));
   };
+  
   return (
+   <> 
+   <ToastContainer/>
     <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-3 gap-6 bg-gray-100">
-
-    
+     
       <div className="bg-white shadow rounded-xl p-6 text-center">
 
         <img
@@ -56,10 +69,8 @@ const FriendDetails = () => {
         <div className={`mt-2 inline-block px-3 py-1 rounded-full text-xs font-bold ${statusClass}`}>
           {friend.status}
         </div>
-
-        <p className="text-gray-500 text-sm mt-2">{friend.email}</p>
-
-        <div className="mt-3 flex justify-center gap-2 flex-wrap">
+        
+         <div className="mt-3 flex justify-center gap-2 flex-wrap">
           {friend.tags.map((tag, i) => (
             <span key={i} className="bg-green-200 px-3 py-1 rounded-full text-xs font-bold uppercase">
               {tag}
@@ -67,19 +78,24 @@ const FriendDetails = () => {
           ))}
         </div>
 
-        <p className="mt-4 text-gray-500 text-sm italic">
+         <p className="mt-4 text-gray-500 text-sm italic">
           "{friend.bio}"
         </p>
 
+        <p className="text-gray-500 text-sm mt-2">{friend.email}</p>
+
+      
+       
+
       
         <div className="mt-6 space-y-3">
-          <button className="w-full border py-2 rounded hover:bg-gray-100">
+          <button className="w-full border border-gray-200 shadow py-2 rounded hover:bg-gray-100">
             ⏰ Snooze 2 Weeks
           </button>
-          <button className="w-full border py-2 rounded hover:bg-gray-100">
+          <button className="w-full border border-gray-200 shadow py-2 rounded hover:bg-gray-100">
             📦 Archive
           </button>
-          <button className="w-full border py-2 rounded text-red-500 hover:bg-red-50">
+          <button className="w-full border border-gray-200 shadow py-2 rounded text-red-500 hover:bg-red-50">
             🗑️ Delete
           </button>
         </div>
@@ -130,15 +146,15 @@ const FriendDetails = () => {
           <div className="grid grid-cols-3 gap-4">
 
             <button onClick={()=>handleActivity("Call")} className="border p-8 rounded-xl hover:bg-gray-100">
-              📞 Call
+              📞 <br /> Call
             </button>
 
             <button onClick={()=>handleActivity("Text")} className="border p-8 rounded-xl hover:bg-gray-100">
-              💬 Text
+              💬 <br /> Text
             </button>
 
             <button onClick={()=>handleActivity("Video")} className="border p-8 rounded-xl hover:bg-gray-100">
-              🎥 Video
+              🎥 <br /> Video
             </button>
 
           </div>
@@ -147,6 +163,7 @@ const FriendDetails = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
