@@ -16,7 +16,7 @@ const FriendDetails = () => {
   }, [id]);
 
   if (!friend) {
-    return <div className="text-center mt-20">Loading...</div>;
+    return <div className="text-center mt-20 mb-20 font-bold text-4xl">  🚫 Friend not found!</div>;
   }
 
   // Status color

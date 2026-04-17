@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Legend, Pie, PieChart, Tooltip } from 'recharts';
+import { Legend, Pie, PieChart, Tooltip,ResponsiveContainer } from 'recharts';
 
 
 const Stats = () => {
@@ -31,28 +31,29 @@ const Stats = () => {
     };
   }, []);
     return (
-        <div className="bg-gray-100 pb-10">
-            <h2 className='text-5xl font-bold'>Friendship Analystics</h2>
-            <div className=" my-10 bg-white m-50 p-20 ">
-<h2 className="text-xl font-bold text-green-600">By Interaction Type</h2>
-            <div className='flex justify-center'>
-               
-<PieChart style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
+        <div className="bg-gray-100 pb-10 px-4">
+            <h2 className='text-2xl md:text-4xl font-bold pt-6'>Friendship Analystics</h2>
+            <div className=" my-10 bg-white max-w-3xl mx-auto p-6 md:p-10 rounded-xl shadow ">
+<h2 className="text-lg mde:text-xl font-bold text-green-600 mb-6 text-start">By Interaction Type</h2>
+            <div className='w-full h-[300px] md:h-[400px]'>
+               <ResponsiveContainer>
+<PieChart>
       <Pie
         data={data}
-        innerRadius="80%"
-        outerRadius="100%"
+        innerRadius={60}
+        outerRadius={100}
         // Corner radius is the rounded edge of each pie slice
-        cornerRadius="50%"
+        cornerRadius="5%"
         fill="#8884d8"
         // padding angle is the gap between each pie slice
-        paddingAngle={5}
+        paddingAngle={2}
         dataKey="value"
         isAnimationActive={true}
       />
      <Legend/>
      <Tooltip/>
     </PieChart>
+    </ResponsiveContainer>
         </div>
             </div>
  
